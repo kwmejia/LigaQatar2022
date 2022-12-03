@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Qatar 2022</title>
+</head>
+
+<body>
+
+  <div class="capa">
+
+    <header class="w-100 d-flex justify-content-around align-items-center mb-5 p-2">
+
+
+      <div class="d-flex justify-content-between align-items-center ">
+        <img src="img/logo_(1).png" height="100px" alt="logo" class="mt-2">
+      </div>
+
+    </header>
+
+    <main class="container">
+      <img src="img/mascota.png" class="pet" alt="mascota">
+      <div class="d-flex justify-content-center">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn__ " data-bs-toggle="modal" data-bs-target="#exampleModal">
+          +
+          <img src="img/balon.png" alt="balon" class="balon" width="60">
+        </button>
+        <h1 class="text-center text-white">Posiciones</h1>
+      </div>
+      <table class="table">
+        <thead class="text-white">
+          <tr>
+            <th></th>
+            <th>Selección</th>
+            <th>PJ</th>
+            <th>E</th>
+            <th>G</th>
+            <th>P</th>
+            <th>Pts</th>
+          </tr>
+
+        </thead>
+        <tbody id="tbody" class="text-white">
+
+        </tbody>
+      </table>
+    </main>
+
+  </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <form class="modal-content ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Nuevo Partido</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body w-100">
+          <section class="d-flex  justify-content-around align-items-center mb-3">
+            <select class="form-select w-50" aria-label="Default select example" id="select1">
+            </select>
+
+            <h2 class="mx-4 text-white ">vs</h2>
+            <select class="form-select w-50 " aria-label="Default select example" id="select2">
+
+            </select>
+          </section>
+          <h3 class="text-center text-white">Marcador</h3>
+          <div class="d-flex w-100 justify-content-center  align-items-center ">
+            <input type="number" class="input__ mx-3" min="0" id="marcador1" require>
+            <h2 class="text-white "> - </h2>
+            <input type="number" class="input__ mx-3" min="0" id="marcador2" require>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn_aceptar" id="btnGuardar" data-bs-dismiss="modal" aria-label="Close">Guardar
+            Partido</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

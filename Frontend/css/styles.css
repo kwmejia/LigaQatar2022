@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(farthest-side ellipse at 10% 0, #333867 20%, #17193b);
+}
+
+input {
+  background: #551033;
+  color: #FFF;
+  font-weight: bold;
+}
+
+
+
+main {
+  background: #17193b60;
+  padding: 20px;
+  position: relative;
+}
+
+.form-select {
+  width: 150px;
+  background: #551033;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.modal-content {
+  background-color: #FAFAFA10;
+  backdrop-filter: blur(0.7rem);
+}
+
+.btn__ {
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 20px;
+  transition: .5s;
+  background: transparent;
+  border: none;
+  position: absolute;
+  left: 30px;
+
+}
+
+.btn__:hover {
+  transform: scale(1.5);
+
+}
+
+.input__ {
+  width: 75px;
+  height: 35px;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid #FFF;
+
+}
+
+.pet {
+  position: absolute;
+  width: 250px;
+  right: -100px;
+  top: -60px;
+  user-select: none;
+  animation: animationPet 2s linear infinite;
+}
+
+.balon {
+  animation: animationBalon 5s linear infinite;
+}
+
+.btn_aceptar {
+  background: #ffff;
+  color: #17193b;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background: #111231;
+}
+
+table th, td {
+  padding: 20px;
+}
+
+table tr {
+  height: 50px;
+}
+
+table tbody tr:nth-child(1) td:nth-child(1) {
+  font-weight: bold;
+  color: yellow;
+}
+
+table tbody tr:nth-child(2) td:nth-child(1) {
+  font-weight: bold;
+  color: #00AAE4;
+}
+
+table tbody tr:nth-child(3) td:nth-child(1) {
+  font-weight: bold;
+  color: #10F810;
+}
+
+table tr:hover td {
+
+  background: rgba(255, 255, 255, .1);
+}
+
+@keyframes animationPet {
+  0% {
+    transform: translateY(-15px);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes animationBalon {
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
